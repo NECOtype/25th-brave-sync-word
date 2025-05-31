@@ -2,15 +2,16 @@
 import "@/styles/global.css";
 import Head from "@/components/Head.astro";
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 <html lang="en">
 	<head>
 		<Head>
+			<meta name="description" content={description}>
 			<title>{title}</title>
 		</Head>
 	</head>
-	<body class="flex items-center h-svh bg-background text-foreground font-mono">
+	<body class="grid grid-rows-[1fr_auto] items-center h-svh bg-background text-foreground font-mono">
 		<slot />
 	</body>
 </html>

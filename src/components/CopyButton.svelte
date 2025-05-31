@@ -17,6 +17,6 @@
 </script>
 
 <button
-	class="inline-flex items-center justify-center cursor-pointer bg-blue text-sm text-brightWhite py-2 px-5 w-[10ch]"
+	class="inline-flex items-center justify-center cursor-pointer bg-background border border-blue text-sm text-blue hover:bg-blue hover:text-white py-2 px-5 w-[10ch]"
 	onclick={copyTheWord}>{label}</button
 >
