@@ -1,0 +1,19 @@
+{
+  "name": "25th-word-brave-sync",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^7.1.0",
+    "@fontsource/space-mono": "^5.2.5",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.1",
+    "svelte": "^5.33.10",
+    "tailwindcss": "^4.1.8"
+  }
+}
