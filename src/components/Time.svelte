@@ -3,6 +3,7 @@
 
 	let currentTime;
 	let now = new Date();
+	let interval;
 	const options = {
 		weekday: "short",
 		year: "numeric",
@@ -28,4 +29,4 @@
 	const formattedTime = (date) => date.toLocaleString("en-GB", options);
 </script>
 
-<p class="text-center text-sm text-border">{formattedTime(now)}</p>
+<p class="text-center text-xs text-foreground">{formattedTime(now)}</p>
