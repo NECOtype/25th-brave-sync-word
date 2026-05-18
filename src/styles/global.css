@@ -1,24 +1,3 @@
-/* --color-background: var(--background); */
-/* --color-foreground: var(--foreground); */
-/* --color-border: var(--border); */
-/* --color-black: var(--black); */
-/* --color-red: var(--red); */
-/* --color-green: var(--green); */
-/* --color-yellow: var(--yellow); */
-/* --color-blue: var(--blue); */
-/* --color-purple: var(--purple); */
-/* --color-cyan: var(--cyan); */
-/* --color-brightBlack: var(--brightBlack); */
-/* --color-brightRed: var(--brightRed); */
-/* --color-brightGreen: var(--brightGreen); */
-/* --color-brightYellow: var(--brightYellow); */
-/* --color-brightBlue: var(--brightBlue); */
-/* --color-brightPurple: var(--brightPurple); */
-/* --color-brightCyan: var(--brightCyan); */
-/* --color-brightWhite: #d7d7d7; */
-/**/
-/* --font-mono: var(--font-family); */
-
 :root {
     --background: #141415;
     --foreground: #cdcdcd;
@@ -38,5 +17,18 @@
     --brightPurple: #c9b1ca;
     --brightCyan: #bebeda;
     --brightWhite: #d7d7d7;
-    --font-family: "Space Mono", monospace;
+
+    --theme-border: 1px solid var(--border);
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    height: 100svh;
 }

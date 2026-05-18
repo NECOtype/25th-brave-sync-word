@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { Font } from "astro:assets";
 import Head from "../components/Head.astro";
 
 const { title, description } = Astro.props;
@@ -9,9 +10,22 @@ const { title, description } = Astro.props;
 		<Head>
 			<meta name="description" content={description}>
 			<title>{title}</title>
+            <Font cssVariable="--font-body" preload />
+            <Font cssVariable="--font-heading" preload />
 		</Head>
 	</head>
-	<body class="grid grid-rows-[1fr_auto] items-center h-svh bg-background text-foreground font-mono">
+	<body>
 		<slot />
 	</body>
 </html>
+
+<style>
+body {
+    font-family: var(--font-body);
+    display: grid;
+    grid-auto-rows: 1fr auto;
+    place-items: center;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+</style>
