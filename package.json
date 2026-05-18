@@ -1,12 +1,13 @@
 {
   "name": "25th-word-brave-sync",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@astrojs/svelte": "^7.1.0",
@@ -14,6 +15,15 @@
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.8.1",
     "svelte": "^5.33.10",
-    "tailwindcss": "^4.1.8"
-  }
+    "tailwindcss": "^4.1.8",
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest"
+  },
+  "devDependencies": {
+    "vite-plus": "latest"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+  },
+  "packageManager": "pnpm@11.1.3"
 }
