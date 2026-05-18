@@ -10,6 +10,7 @@
     "prepare": "vp config"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.5.2",
     "@astrojs/svelte": "^8.1.1",
     "astro": "^6.3.5"
   },
