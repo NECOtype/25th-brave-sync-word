@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
-	import { bip39Words } from "@/lib/bip39Words";
-	import { wordOfTheDay } from "@/lib/stores";
+	import { bip39Words } from "../lib/bip39Words.js";
+	import { wordOfTheDay } from "../lib/stores";
 
 	let theWord;
 

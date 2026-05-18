@@ -1,5 +1,5 @@
 <script>
-	import { wordOfTheDay } from "@/lib/stores";
+	import { wordOfTheDay } from "../lib/stores";
 	import { get } from "svelte/store";
 
 	let label = $state("Copy");

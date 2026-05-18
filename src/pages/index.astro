@@ -1,8 +1,8 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Word from "@/components/Word.svelte";
-import CopyButton from "@/components/CopyButton.svelte";
-import Time from "@/components/Time.svelte";
+import Layout from "../layouts/Layout.astro";
+import Word from "../components/Word.svelte";
+import CopyButton from "../components/CopyButton.svelte";
+import Time from "../components/Time.svelte";
 
 const props = Astro.props
 ---
@@ -18,7 +18,7 @@ const props = Astro.props
 			<p class="text-xs py-2 border-border border-y text-pretty">Brave does not officially support using the Sync code as a backup and you should not rely on this continuing to work in to the future. Use the export functionality in bookmarks and the password manager instead</p>
 			<div class="flex gap-4">
 				<div class="border border-border p-2 py-0 flex-grow grid place-items-center font-bold">
-					<Word client:only />
+					<Word client:only="svelte" />
 				</div>
 				<CopyButton client:only />
 			</div>
