@@ -20,9 +20,10 @@
 
 <style>
     button {
+        width: 10ch;
         cursor: pointer;
+        text-align: center;
         background-color: var(--background);
-        padding-inline: 1rem;
         border: 1px solid var(--blue);
         color: var(--blue);
 
