@@ -23,6 +23,10 @@
     --theme-border: 1px solid var(--border);
 }
 
+::selection {
+    background-color: var(--blue);
+}
+
 html {
     font-family: var(--font-body);
 }
