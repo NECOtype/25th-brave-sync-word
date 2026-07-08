@@ -1,12 +1,10 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 import svelte from "@astrojs/svelte";
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
     integrations: [svelte()],
-    adapter: cloudflare(),
     fonts: [
         {
             provider: fontProviders.fontsource(),
@@ -19,6 +17,6 @@ export default defineConfig({
             name: "Geist",
             cssVariable: "--font-heading",
             fallbacks: ["sans-serif"],
-        }
+        },
     ],
 });

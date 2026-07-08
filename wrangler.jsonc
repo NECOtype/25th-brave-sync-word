@@ -1,0 +1,7 @@
+{
+    "name": "25th-brave-sync-word",
+    "compatibility_date": "2026-07-08", // Update to the day you deploy
+    "assets": {
+        "directory": "./dist",
+    },
+}
