@@ -1,18 +1,21 @@
 ---
 import "@/styles/global.css";
 import { Font } from "astro:assets";
-import Head from "../components/Head.astro";
 
 const { title, description } = Astro.props;
 ---
 <html lang="en">
 	<head>
-		<Head>
-			<meta name="description" content={description}>
-			<title>{title}</title>
-            <Font cssVariable="--font-body" preload />
-            <Font cssVariable="--font-heading" preload />
-		</Head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+		<meta name="og:url" content={Astro.url} />
+		<meta name="og:title" content={title} />
+		<meta name="og:description" content={description} />
+        <title>{title}</title>
+        <Font cssVariable="--font-body" preload />
+        <Font cssVariable="--font-heading" preload />
 	</head>
 	<body>
         <div id="app">
