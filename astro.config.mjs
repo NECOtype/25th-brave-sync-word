@@ -8,13 +8,13 @@ export default defineConfig({
     fonts: [
         {
             provider: fontProviders.fontsource(),
-            name: "Bricolage Grotesque",
+            name: "Space Mono",
             cssVariable: "--font-body",
-            fallbacks: ["sans-serif"],
+            fallbacks: ["monospace"],
         },
         {
             provider: fontProviders.fontsource(),
-            name: "Geist",
+            name: "Bricolage Grotesque",
             cssVariable: "--font-heading",
             fallbacks: ["sans-serif"],
         },
