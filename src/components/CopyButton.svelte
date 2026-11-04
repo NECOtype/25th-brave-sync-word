@@ -1,6 +1,6 @@
 <script>
-    import { wordOfTheDay } from "../lib/stores";
     import { get } from "svelte/store";
+    import { wordOfTheDay } from "@/lib/stores";
 
     let label = $state("Copy");
     let word = $derived(wordOfTheDay);

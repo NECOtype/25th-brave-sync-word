@@ -1,32 +1,31 @@
 <script>
-	import { onDestroy, onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
 
-	let currentTime;
-	let now = new Date();
-	let interval;
-	const options = {
-		weekday: "short",
-		year: "numeric",
-		month: "long",
-		day: "2-digit",
-		hour: "2-digit",
-		minute: "2-digit",
-		second: "2-digit",
-		timeZoneName: "short",
-		timeZone: "Etc/GMT",
-	};
+    let now = new Date();
+    let interval;
+    const options = {
+        weekday: "short",
+        year: "numeric",
+        month: "long",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        timeZoneName: "short",
+        timeZone: "Etc/GMT",
+    };
 
-	onMount(() => {
-		interval = setInterval(() => {
-			now = new Date();
-		}, 1000);
-	});
+    onMount(() => {
+        interval = setInterval(() => {
+            now = new Date();
+        }, 1000);
+    });
 
-	onDestroy(() => {
-		clearInterval(interval);
-	});
+    onDestroy(() => {
+        clearInterval(interval);
+    });
 
-	const formattedTime = (date) => date.toLocaleString("en-GB", options);
+    const formattedTime = (date) => date.toLocaleString("en-GB", options);
 </script>
 
-<p class="text-center text-xs text-foreground">{formattedTime(now)}</p>
+<p>{formattedTime(now)}</p>
