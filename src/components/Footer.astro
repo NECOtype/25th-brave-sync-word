@@ -1,0 +1,23 @@
+---
+import Time from "@/components/Time.svelte";
+
+const { generator } = Astro;
+---
+
+<div>
+    <Time client:only /><span>{generator}</span>
+</div>
+
+<style>
+div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--border);
+
+    span {
+        color: var(--border);
+    }
+}
+</style>

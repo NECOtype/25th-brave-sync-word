@@ -1,28 +1,17 @@
 ---
 import "@/styles/global.css";
-import { Font } from "astro:assets";
-
-const { title, description } = Astro.props;
+import Head from "@/components/Head.astro";
+import Footer from "@/components/Footer.astro";
 ---
 <html lang="en">
 	<head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
-		<meta name="og:url" content={Astro.url} />
-		<meta name="og:title" content={title} />
-		<meta name="og:description" content={description} />
-		<meta name="og:type" content="website" />
-        <title>{title}</title>
-        <Font cssVariable="--font-body" preload />
-        <Font cssVariable="--font-heading" preload />
+        <Head />
 	</head>
 	<body>
         <div id="app">
             <slot />
         </div>
+        <Footer />
 	</body>
 </html>
 
@@ -30,9 +19,6 @@ const { title, description } = Astro.props;
 #app {
     height: 100svh;
     display: grid;
-    grid-auto-rows: 1fr auto;
     place-items: center;
-    background-color: var(--background);
-    color: var(--foreground);
 }
 </style>
