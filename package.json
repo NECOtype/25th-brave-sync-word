@@ -7,19 +7,16 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-types": "wrangler types"
-  },
-  "dependencies": {
-    "@astrojs/cloudflare": "^14.1.1",
-    "@astrojs/svelte": "^9.0.1",
-    "astro": "^7.0.6",
-    "svelte": "^5.56.4",
-    "typescript": "^6.0.3"
+    "generate-types": "wrangler types",
+    "prepare": "vp config"
   },
   "devDependencies": {
+    "@astrojs/svelte": "^9.1.2",
+    "astro": "^7.4.5",
+    "svelte": "^5.57.3",
     "vite": "catalog:",
     "vite-plus": "catalog:",
-    "wrangler": "^4.108.0"
+    "wrangler": "^4.157.0"
   },
   "devEngines": {
     "packageManager": {
